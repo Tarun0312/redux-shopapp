@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import Product from '../components/Product';
 import Spinner from '../components/Spinner';
 
-
-const API_URL = "https://fakestoreapi.com/products";
 const HomePage = (props) => {
 
+  
+
+  const API_URL = "https://fakestoreapi.com/products";
   const [loading,setLoading]=useState(false);
   const [productData,setProductData]=useState([]);
 

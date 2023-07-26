@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 import CartItem from "../components/CartItem";
 
 const CartPage = () => {
-  const {cart} = useSelector((state) => state);
+
+  const  cart  = useSelector((state) => state.cart);
   const [totalAmount,setTotalAmount]=useState(0);
 
   useEffect(() => {

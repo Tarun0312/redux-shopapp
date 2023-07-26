@@ -5,7 +5,7 @@ import {  useSelector } from 'react-redux';
 
 const Navbar = () => {
 
-    const { cart } = useSelector((state) => state)
+    const cart  = useSelector((state) => state.cart);
 
     return (
         <nav className='w-full bg-slate-900 py-3'>

@@ -8,10 +8,9 @@ import { addItemInCart ,removeItemFromCart} from '../redux/slices/CartSlice'
 const Product = ({productItem}) => {
 
 
-  const { cart }= useSelector((state) => state);
-
+  const cart = useSelector((state) => state.cart);
   const dispatch=useDispatch()
-
+  
   const addToCart = () => {
     dispatch(addItemInCart(productItem));
     toast.success("Item added to Cart!");
