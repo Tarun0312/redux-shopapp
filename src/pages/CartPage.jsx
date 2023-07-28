@@ -17,7 +17,7 @@ const CartPage = () => {
     <div className='w-11/12 max-w-6xl mx-auto py-2'>
       {
         cart.length === 0 ?
-          (<div className='w-screen h-[80vh] flex flex-col justify-center items-center gap-y-4'>
+          (<div className='w-full h-[80vh] flex flex-col justify-center items-center gap-y-4'>
             <h2 className='font-bold text-2xl'>Your Cart is empty!</h2>
             <NavLink to="/"><button className='uppercase text-lg font-bold text-center text-white bg-green-600 px-12 py-4 rounded-lg hover:border-2 hover:border-green-600 hover:bg-white hover:text-green-600 transition-all  duration-800'>Shop Now</button></NavLink>
           </div>) :
